@@ -1,0 +1,284 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+body > div {
+    position: relative;
+    top: 11vh;
+}
+p {
+    margin: 0;
+}
+
+/******************************
+
+            NAVBAR
+
+*******************************/
+
+nav {
+    background-color: #333333;
+    margin: 0;
+    position: fixed;
+    z-index: 5;
+    width:100%
+}
+nav div {
+    display: inline;
+}
+nav a {
+    color: #dddddd;
+    text-decoration: none;
+    padding: 2vh;
+    font-family: "Open Sans";
+    transition: color .6s;
+}
+#navleft {
+    float: left;
+    padding: 1vh;
+    padding-left: 3vw;
+}
+#navleft a {
+    font-size: 7vh;
+}
+#navright, #smallnavright {
+    float: right;
+    padding: 4vh;
+}
+#navright a:nth-child(1):hover, #smallnavright a:nth-child(1):hover {
+    color: #ffffff;
+}
+#navright a:nth-child(2):hover, #smallnavright a:nth-child(2):hover {
+    color: #88ff88;
+}
+#navright a:nth-child(3):hover, #smallnavright a:nth-child(3):hover {
+    color: #ff6060;
+}
+#navright a:nth-child(4):hover, #smallnavright a:nth-child(4):hover {
+    color: #50a0ff;
+}
+#smallnavright {
+    display:none;
+}
+#smallnavright a {
+    padding: 1vh;
+}
+@media screen and (max-width: 700px) {
+    #navright {
+        display:none;
+    }
+    #smallnavright {
+        display:inline;
+    }
+}
+@media screen and (orientation: portrait) {
+    #navright {
+        display:none;
+    }
+    #smallnavright {
+        display:inline;
+    }
+}
+@media screen and (max-width: 450px)  {
+    #navright {
+        display:none;
+    }
+    #smallnavright {
+        display:none;
+    }
+}
+/******************************
+
+            TITLECARD
+
+*******************************/
+
+#titlecard {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+#titlecard::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-image: url("kids.jpg");
+    background-position: center;
+}
+#titlecard::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background-color: black;
+}
+#titlecard p {
+    color: #ffffff;
+    font-size: 15vh;
+    margin:0;
+    text-align: center;
+    position: relative;
+    padding: 15vh 10vw 15vh 10vw;
+    font-family: "Merriweather";
+}
+
+@media screen and (max-width: 700px) {
+    #titlecard p {
+        font-size: 11vw;
+    }
+}
+@media screen and (orientation: portrait) {
+    #titlecard p {
+        font-size: 11vw;
+        padding: 7vh 10vw 7vh 10vw;
+    }
+}
+
+/******************************
+
+             ABOUT
+
+*******************************/
+
+#about {
+    padding: 5vw 7vw 5vw 7vw;
+}
+#about p {
+    margin-bottom: 2vh;
+    font-family: 'Open Sans';
+}
+#goal {
+    font-size: 1.8em;
+}
+#about p:not(#goal) {
+    font-size: 1.3em;
+}
+
+/******************************
+
+          SCI/ENG/TECH
+
+*******************************/
+.set {
+    padding: 5vw 7vw 5vw 7vw;
+    position: relative;
+    overflow: hidden;
+}
+.set h1 {
+    margin: 0;
+    font-size: 16vh;
+    padding-top: 2vh;
+    color: white;
+    font-family: 'Merriweather';
+}
+.set p {
+    font-size: 5vh;
+    color: white;
+    font-family: 'Open Sans';
+}
+.set::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+.set::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#sci h1, #tech h1 {
+    float: left;
+    padding-right: 7vw;
+}
+#eng h1 {
+    padding-left: 7vw;
+    float: right;
+    text-align: right;
+}
+#eng p {
+    text-align: right;
+}
+#sci::after {
+    background: url("sci1.jpg");
+    background-position: right;
+}
+#sci::before {
+    background-color: green;
+}
+#eng::after {
+    background-image: url("eng1.jpg");
+    background-position: right;
+}
+#eng::before {
+    background-color: red;
+}
+#tech::after {
+    background-image: url("tech1.jpg");
+}
+#tech::before {
+    background-color: #2070ff;
+}
+
+@media screen and (max-width: 1100px) {
+    .set h1 {
+        display:block;
+        float:none;
+        width: 100%
+    }
+    .set h1 {
+        font-size: 12vw;
+    }
+    .set p {
+        font-size: 6vw;
+    }
+}
+@media screen and (orientation: portrait) {
+    .set h1 {
+        display:block;
+        float:none;
+        width: 100%
+    }
+    .set h1 {
+        font-size: 12vw;
+    }
+    .set p {
+        font-size: 6vw;
+    }
+}
+}
+
+/******************************
+
+            CONTACT
+
+*******************************/
+
+#contact {
+    padding: 8vh 5vh 8vh 5vh;
+}
+#contact p {
+    font-family: 'Open Sans';
+    text-align: center;
+}
