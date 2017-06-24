@@ -125,7 +125,7 @@ nav a {
 }
 #titlecard p {
     color: #ffffff;
-    font-size: 15vh;
+    font-size: 13vh;
     margin:0;
     text-align: center;
     position: relative;
@@ -135,12 +135,12 @@ nav a {
 
 @media screen and (max-width: 700px) {
     #titlecard p {
-        font-size: 11vw;
+        font-size: 10vw;
     }
 }
 @media screen and (orientation: portrait) {
     #titlecard p {
-        font-size: 11vw;
+        font-size: 10vw;
         padding: 7vh 10vw 7vh 10vw;
     }
 }
@@ -177,13 +177,13 @@ nav a {
 }
 .set h1 {
     margin: 0;
-    font-size: 16vh;
+    font-size: 12vh;
     padding-top: 2vh;
     color: white;
     font-family: 'Merriweather';
 }
 .set p {
-    font-size: 5vh;
+    font-size: 4vh;
     color: white;
     font-family: 'Open Sans';
 }
@@ -208,14 +208,22 @@ nav a {
     z-index: -1;
     opacity: 0.4;
 }
-#sci h1, #tech h1 {
+#contact.set h1, #contact.set p{
+    font-color: black !important;
+    color: black !important;
+}
+
+.left h1{
     float: left;
     padding-right: 7vw;
 }
-#eng h1 {
+.right h1{
     padding-left: 7vw;
     float: right;
     text-align: right;
+}
+.center {
+    text-align: center;
 }
 #eng p {
     text-align: right;
@@ -267,7 +275,7 @@ nav a {
         font-size: 6vw;
     }
 }
-}
+
 
 /******************************
 
@@ -275,11 +283,12 @@ nav a {
 
 *******************************/
 
-#contact {
+/*#contact {
     padding: 8vh 5vh 8vh 5vh;
+    font-color: black;
 }
 #contact p {
     font-family: 'Open Sans';
     text-align: center;
     padding: 8vh 5vh 8vh 5vh;
-}
+}*/
